@@ -328,10 +328,10 @@ body {
   height: auto;
 }
 
-/* ✅ Responsive Fix: Stack image below menu on smaller screens */
+/*  Responsive Fix: Stack image below menu on smaller screens */
 @media (max-width: 1024px) {
   .menu-container {
-    flex-direction: column; /* Stack everything vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -390,22 +390,21 @@ body {
 }
 
 .bankschema-image {
-  flex: 1; /* Allows it to take up available space */
+  flex: 1; 
   display: flex;
-  justify-content: center; /* Pushes image to the right */
-  align-items: center; /* Aligns image vertically */
-  max-width: 50%; /* Controls image size */
-  /* margin-left: 450px;
-    margin-top: -500px; */
+  justify-content: center; 
+  align-items: center; 
+  max-width: 50%; 
+
 }
 
 .bankschema-image img {
   width: 100%;
-  max-width: 450px; /* Keeps the image responsive */
+  max-width: 450px; 
   height: auto;
 }
 
-/* ✅ Responsive Fix for Mobile Screens */
+/*  Responsive Fix for Mobile Screens */
 @media (max-width: 768px) {
   .menu-list {
     flex-direction: column;
@@ -424,8 +423,8 @@ body {
   }
 }
 
-/* Success div container styling  */
 
+/* Success div container styling  */
 .success {
   margin-top: 25px;
   background-color: #ebe9e5;
