@@ -5,11 +5,8 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #f8f9fa;
-}
 
-/* Navbar */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -17,10 +14,21 @@ body {
     padding: 15px 50px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    border-radius: 5    px;
 }
 
-.logo {
+body {
+    background-color: #f8f9fa;
+    padding-top: 70px;
+}
+
+
+.logo { 
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -306,4 +314,62 @@ body {
     margin-top: 5px;
   }
   
+  /* Delivery features styling*/
+  .delivery {
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: 'Verdana', sans-serif;
+    padding: 20px;
+  }
   
+  .delivery h2 {
+    font-size: 35px;
+    margin-top: 9px;
+  }
+  .delivery p {
+    font-size: 13px; 
+    margin-top: 10px;
+  }
+
+  /* menu-list----------------------------------------- */
+  .menu-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+    padding: 30px;
+    margin-left: 20px; /* Start 20px from the left */
+    max-width: 600px; /* Reducing container size */
+}
+
+.menu-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.menu-box img {
+    width: 70px;  /* Small image */
+    height: 70px;
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover;
+    margin-right: 15px; /* Space between image and text */
+}
+
+.menu-box h2 {
+    font-size: 16px; /* Heading size */
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.menu-box h2 span {
+    display: block; /* Makes text appear below h2 */
+    font-size: 14px; /* Smaller font size for description */
+    color: black;
+    font-weight: normal;
+}
