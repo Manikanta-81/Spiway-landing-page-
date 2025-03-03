@@ -1,3 +1,7 @@
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuBoxes = document.querySelectorAll(".menu-box");
   
