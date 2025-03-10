@@ -137,21 +137,19 @@ body {
   .home-name-badge {
     padding: 10px 20px;
     min-width: auto;
-    max-width: 90%; /* Ensures it fits within the screen */
+    max-width: 90%; 
   }
   
   .home-name-badge span {
-    font-size: 14px; /* Reduce text size to fit within the box */
+    font-size: 14px; 
   }
 
   .avatar-group img {
-    width: 22px;  /* Slightly reduce avatar size */
+    width: 22px; 
     height: 22px;
     margin-left: -6px;
   }
 }
-
-
 
 /* Features */
 .feature {
@@ -179,11 +177,6 @@ body {
   .content {
     max-width: 100%;
   }
-/* 
-  .image-container img {
-    width: 80%;
-    margin: auto;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -276,6 +269,7 @@ body {
   text-align: center;
 }
 
+/* Stats Container */
 .stats-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -284,35 +278,62 @@ body {
   min-width: 300px;
 }
 
-/*  Pop-Up Animation */
+/* Stat Box - Default State */
 .stat-box {
   background-color: white;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-/* Hover Effect - Pop Up effect */
+/* Hover Effect - Pop Up + Left-to-Right Fill */
+.stat-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #B4D9EF;
+  transition: width 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.stat-box:hover::before {
+  width: 100%;
+}
+
 .stat-box:hover {
   transform: translateY(-8px) scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Ensuring text stays above the hover effect */
+.stat-box span, 
+.stat-box p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Big Text */
 .big-text {
   font-size: 24px;
   font-weight: bold;
   color: #222;
 }
 
+/* Stat Box Text */
 .stat-box p {
   font-size: 14px;
   color: #666;
   margin-top: 5px;
 }
 
-/* Responsive for mobile view and all devices */
+/* Responsive for mobile and tablets */
 @media (max-width: 1024px) {
   .info-section {
     flex-direction: column;
@@ -338,6 +359,7 @@ body {
     margin-bottom: 15px;
   }
 }
+
 
 /* Delivery features styling*/
 .delivery {
@@ -421,7 +443,7 @@ body {
 .menu-box {
   display: flex;
   align-items: center;
-  background: white;
+  background: #dff0ff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
