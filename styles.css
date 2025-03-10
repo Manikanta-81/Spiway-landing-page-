@@ -246,7 +246,7 @@ body {
   height: 24px;
 }
 
-/* Full-width Info Section */
+/*Info Section */
 .info-section {
   margin-top: 25px;
   background-color: #ebe9e5;
@@ -259,7 +259,6 @@ body {
   flex-wrap: wrap; 
 }
 
-/* Left Side Text */
 .info-text {
   font-size: 28px;
   font-weight: bold;
@@ -269,7 +268,6 @@ body {
   text-align: center;
 }
 
-/* Stats Container */
 .stats-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -278,7 +276,6 @@ body {
   min-width: 300px;
 }
 
-/* Stat Box - Default State */
 .stat-box {
   background-color: white;
   padding: 20px;
@@ -312,28 +309,26 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Ensuring text stays above the hover effect */
+/* hover effect*/
 .stat-box span, 
 .stat-box p {
   position: relative;
   z-index: 1;
 }
 
-/* Big Text */
 .big-text {
   font-size: 24px;
   font-weight: bold;
   color: #222;
 }
 
-/* Stat Box Text */
 .stat-box p {
   font-size: 14px;
   color: #666;
   margin-top: 5px;
 }
 
-/* Responsive for mobile and tablets */
+/* Responsive*/
 @media (max-width: 1024px) {
   .info-section {
     flex-direction: column;
@@ -379,7 +374,6 @@ body {
   margin-top: 10px;
 }
 
-/*  Parent container to align menu and image side by side */
 .menu-container {
   display: flex;
   justify-content: space-between;
@@ -460,7 +454,6 @@ body {
 }
 
 /* Staggered Delay Effect */
-
 .menu-box:nth-child(1) { transition-delay: 0.2s; }
 .menu-box:nth-child(2) { transition-delay: 0.4s; }
 .menu-box:nth-child(3) { transition-delay: 0.6s; }
@@ -475,7 +468,6 @@ body {
   margin-right: 20px;
 }
 
-/* Heading & Text */
 .menu-box h2 {
   font-size: 18px;
   margin: 0;
@@ -541,7 +533,6 @@ body {
   font-size: 13px;
   margin-top: 5px;
 }
-/* Steps Wrapper */
 .steps-wrapper {
   display: flex;
   flex-direction: column;
@@ -561,7 +552,7 @@ body {
   margin-top: 50px;
 
 }
-/* Reverse Row (For Specific Rows) */
+/* Reverse Row (For second one)*/
 .reverse-layout {
   display: flex;
   flex-direction: row-reverse;
