@@ -89,6 +89,7 @@ body {
   height: auto;
 }
 
+/* home-name-badge */
 .home-name-badge {
   display: flex;
   align-items: center;
@@ -120,6 +121,9 @@ body {
 .avatar-group {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap; /* Prevents wrapping by default */
+  max-width: 100%; /* Ensures it doesn't overflow */
+  overflow: hidden; /* Hides excess images */
 }
 
 .avatar-group img {
@@ -130,24 +134,38 @@ body {
   margin-left: -8px;
   border: 2px solid white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: margin 0.3s ease-in-out; /* Smooth adjustment */
 }
 
-/* Responsive */
+/* Responsive Fix */
 @media (max-width: 768px) {
   .home-name-badge {
-    padding: 10px 20px;
-    min-width: auto;
-    max-width: 90%; 
+      padding: 10px 20px;
+      min-width: auto;
+      max-width: 90%; 
   }
-  
+
   .home-name-badge span {
-    font-size: 14px; 
+      font-size: 14px; 
+  }
+
+  .avatar-group {
+      flex-wrap: wrap; /* Allows images to move to the next line if needed */
+      justify-content: center; /* Centers avatars if they wrap */
   }
 
   .avatar-group img {
-    width: 22px; 
-    height: 22px;
-    margin-left: -6px;
+      width: 22px; 
+      height: 22px;
+      margin-left: -6px; /* Reduces overlap on small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .avatar-group img {
+      width: 20px; 
+      height: 20px;
+      margin-left: -5px; /* Further reduces overlap on very small screens */
   }
 }
 
