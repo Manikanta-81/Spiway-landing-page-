@@ -4,11 +4,12 @@ Spiway is a modern and secure payment management system designed to simplify tra
 
 ## 🚀 Deployment
 
-Live Demo: [Spiway-landing-page]()
+Live Demo: [Spiway-landing-page](https://manikanta-81.github.io/Spiway-landing-page-/)
+
 
 ## 📂 Repository
 
-GitHub Repo: [Spiway-landing-page Repository](https://manikanta-81.github.io/Spiway-landing-page-/)
+GitHub Repo: [Spiway-landing-page Repository](https://github.com/Manikanta-81/Spiway-landing-page-)
 
 ## 📧 Contact
 
