@@ -211,7 +211,7 @@ body {
   }
 }
 
-/* Store Buttons */
+/* Store Buttons styling */
 .store-buttons {
   display: flex;
   gap: 15px;
@@ -243,7 +243,8 @@ body {
   height: 24px;
 }
 
-/*Info Section */
+/*Info Section styling */
+
 .info-section {
   margin-top: 25px;
   background-color: #ebe9e5;
@@ -284,7 +285,7 @@ body {
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-/* Hover Effect - Pop Up + Left-to-Right Fill */
+/* Hover Effect - Pop Up + Left-to-Right with color */
 .stat-box::before {
   content: "";
   position: absolute;
