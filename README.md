@@ -19,10 +19,8 @@ For any inquiries, reach out to me at: [vaddimanikanta2002@gmail.com](mailto:vad
 - HTML
 - CSS
 - JavaScript
-- React (if applicable)
 
 ## 📜 Features
-- Secure transactions
 - User-friendly interface
 - Responsive design
 
