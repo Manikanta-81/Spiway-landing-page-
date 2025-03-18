@@ -1,14 +1,15 @@
-# ZynPay
+# Spiway
 
-ZynPay is a modern and secure payment management system designed to simplify transactions. This project aims to provide a seamless user experience with robust functionality.
+Spiway is a modern and secure payment management system designed to simplify transactions. This project aims to provide a seamless user experience with robust functionality.
 
 ## 🚀 Deployment
 
-Live Demo: [ZynPay](https://manikanta-81.github.io/ZynPay/)
+Live Demo: [Spiway-landing-page](https://manikanta-81.github.io/Spiway-landing-page-/)
+
 
 ## 📂 Repository
 
-GitHub Repo: [ZynPay Repository](https://github.com/Manikanta-81/ZynPay)
+GitHub Repo: [Spiway-landing-page Repository](https://github.com/Manikanta-81/Spiway-landing-page-)
 
 ## 📧 Contact
 
@@ -18,10 +19,8 @@ For any inquiries, reach out to me at: [vaddimanikanta2002@gmail.com](mailto:vad
 - HTML
 - CSS
 - JavaScript
-- React (if applicable)
 
 ## 📜 Features
-- Secure transactions
 - User-friendly interface
 - Responsive design
 
